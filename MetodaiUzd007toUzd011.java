@@ -57,7 +57,7 @@ public class MetodaiUzd007toUzd011 {
         System.out.println("-----------------------------------");
 
         printSquare(4);
-        
+
         System.out.println("-----------------------------------");
 
         printRectangle(17, 3);
