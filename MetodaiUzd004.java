@@ -7,7 +7,7 @@ package UzdaviniaiMetodai1;
 public class MetodaiUzd004 {
     public static void main(String[] args) {
 
-        int n = 2012;
+        int n = 2017;
 
         System.out.println(metai(n));
     }
