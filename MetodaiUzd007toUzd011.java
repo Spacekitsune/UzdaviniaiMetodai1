@@ -50,7 +50,26 @@ package UzdaviniaiMetodai1;
 public class MetodaiUzd007toUzd011 {
     public static void main(String[] args) {
 
+        printStar(5);
+        printStar(3);
+        printStar(9);
+
+        System.out.println("-----------------------------------");
+
+        printSquare(4);
+
+
+        System.out.println("-----------------------------------");
+
+        printRectangle(17, 3);
+
+        System.out.println("-----------------------------------");
+
         printTriangle(4);
+
+        System.out.println("-----------------------------------");
+
+        printXmasTree(4);
     }
 
     private static void printStar(int s) { // 7Uzd
@@ -63,31 +82,35 @@ public class MetodaiUzd007toUzd011 {
     private static void printSquare(int d) { // 8 Uzd
         for (int j = 0; j < d; j++) {
             printStar(d);
-            System.out.println();
         }
     }
 
     private static void printRectangle(int e, int f) { // 9Uzd
         for (int i = 0; i < f; i++) {
             printStar(e);
-            System.out.println();
         }
     }
 
     private static void printTriangle(int g) { // 10Uzd
-        for (int j = 1; j <= g; j++) {
-            printWhiteSpace(g - j);
-            printStar(j);
-
-
+        for (int i = 1; i <= g; i++) {
+            printStar(i);
         }
     }
 
-
-    private static void printWhiteSpace(int number) { // 11Ud
-        for (int i = 1; i <= number; i++) {
-            System.out.print((" "));
+    private static void printXmasTree(int size) {
+        for (int i=1; i<=size; i++) {
+            printWhiteSpace(size-i);
+            printStar(( i*2 ) -1);
+        }
+        for(int i=1; i<=2;i++) {
+            printWhiteSpace(size-2);
+            printStar(3);
         }
     }
 
+    private static void printWhiteSpace(int number) {
+        for (int i=1; i<=number; i++) {
+            System.out.print(" ");
+        }
+    }
 }
